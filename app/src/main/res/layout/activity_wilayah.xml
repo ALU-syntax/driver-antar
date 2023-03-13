@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_chat"
+    android:paddingHorizontal="20dp"
+    tools:context=".activity.WilayahActivity">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:scaleType="centerInside"
+        android:layout_above="@id/title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="30dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <customfonts.TextViewSFProDisplayMedium
+        android:id="@+id/title"
+        android:textSize="16sp"
+        android:textColor="@color/orange"
+        android:textAlignment="center"
+        android:layout_above="@id/layoututama"
+        android:text="Untuk Meningkatkan Layanan Kami Mohon dapat Dilengkapi Data Berikut...!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/layoututama"
+        android:orientation="vertical"
+        android:background="@drawable/background_chat_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <customfonts.EditTextSFProDisplayRegular
+            android:clickable="true"
+            android:editable="false"
+            android:layout_margin="10dp"
+            android:id="@+id/etwilayah"
+            android:paddingHorizontal="20dp"
+            android:background="@color/off_white"
+            android:paddingVertical="20dp"
+            android:hint="Pilih Wilayah Kerja Anda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <customfonts.Button_SF_Pro_Display_Medium
+            android:id="@+id/btnupdate"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Update Wilayah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

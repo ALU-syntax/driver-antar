@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+
+        android:id="@+id/ivImage"
+
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="50dp"
+        android:src="@drawable/slide_two" />
+
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:id="@+id/ctvTextdecrib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="Pendaftaran Anda Telah Berhasil...!"
+            android:textColor="@color/quantum_orange700"
+            android:textSize="25sp" />
+
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_marginTop="20dp"
+            android:id="@+id/ctvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:text="Mohon tunggu persetujuan dari Admin 1x24 Jam atau hubungi pusat bantuan: \n\nWhatsapp : 085220020027 \nEmail: bumdesku.garut@gmail.com "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:id="@+id/ctvText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:text="Terima Kasih Telah Bergabung Bersama BUMdesKu."
+            android:textColor="@color/quantum_orange700"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_oke"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_round_1"
+        android:text="OKE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

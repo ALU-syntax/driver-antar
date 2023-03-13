@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inbox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:background="@color/light_white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_back"
+                android:tint="@color/black" />
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Inbox Selengkapnya"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toolbar"
+        android:paddingVertical="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_round_2"
+            android:padding="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <customfonts.TextViewSFProDisplayRegular
+                android:id="@+id/judulnotif"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Judul Notif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <WebView
+                android:background="@color/transparent"
+                android:id="@+id/isinotif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                tools:ignore="WebViewLayout" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/kembali"
+                    android:layout_weight="1"
+                    android:textColor="@color/orange"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14sp"
+                    android:text="Kembali..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tanggalnotif"
+                    android:layout_marginTop="2dp"
+                    android:textSize="11sp"
+                    android:gravity="right"
+                    android:text="12-02-2021"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

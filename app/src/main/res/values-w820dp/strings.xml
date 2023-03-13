@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Driver BUMdesKu</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCiWtYdtXeZALg4FM9bP2dysxDaptNpGr8</string>
+    <string name="loginplaystore">821651748354835</string>
+    <string name="introtext1">Daftar!</string>
+    <string name="introdesc1">Dapatkan penghasilan tambahan menjadi driver BUMDesKU</string>
+    <string name="introtext2">Tanpa terikat waktu</string>
+    <string name="introdesc2">Kamu bebas memilih pekerjaan</string>
+    <string name="introtext3">Dengan fitur maps</string>
+    <string name="introdesc3">Kamu bisa mengantarkan pesanan sesuai maps!</string>
+
+    <string name="bagikan">M-Ojek adalah trasportasi online lokal</string>
+    <string name="exit">Apakah kamu yakin ingin keluar aplikasi??</string>
+    <string name="yes">Ya!</string>
+    <string name="no">Tidak</string>
+
+    <string name="email">Email</string>
+    <string name="verifydesc">Verifikasi nomor hp</string>
+    <string name="norecieve">Tidak mendapatkan kode?</string>
+    <string name="resend">Kirim ulang</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="privacy">Dengan masuk, Anda menyetujui  <![CDATA[<b><font color=#6DC0FF>Syarat dan ketentuan</font></b>]]></string>
+
+    <string name="lupa">Lupa Password?</string>
+    <string name="button_signIn">Login</string>
+    <string name="button_signUp">Daftar</string>
+    <string name="button_dontHaveAccount">Belum punya akun? </string>
+    <string name="wrongnumber">Nomor hp salah</string>
+    <string name="phoneemailwrong">Nomor hp atau password salah</string>
+    <string name="phonepass">No hp dan password tidak boleh kosong!</string>
+    <string name="phoneempty">No hp tidak boleh kosong!</string>
+    <string name="passempty">Password tidak boleh kosong!</string>
+    <string name="emailempty">Email tidak boleh kosong!</string>
+
+    <string name="hint_name">Nama</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Contoh: 853xxxxxxxx</string>
+    <string name="hint_birthday">Tanggal Lahir</string>
+    <string name="hint_password">Password</string>
+
+    <string name="menu_home">Beranda</string>
+    <string name="menu_chat">chat</string>
+    <string name="menu_order">Order</string>
+    <string name="menu_favourite">Favourit</string>
+    <string name="menu_profile">Profil</string>
+    <string name="text_cancel">Batal</string>
+    <string name="getstarted">Mulai</string>
+
+    <string name="ride_location">Lokasi</string>
+    <string name="ride_destination">Tujuan</string>
+
+    <string name="ride_note">Catatan</string>
+
+    <string name="ride_setPickUp">Set Jemput</string>
+    <string name="ride_setDestination">Set Tujuan</string>
+    <string name="text_order">Order</string>
+    <string name="waiting_pleaseWait">Silahkan tunggu....</string>
+    <string name="text_noInternet">Tidak ada akses internet</string>
+
+    <string name="notification_cancel">Order berhasil dibatalkan</string>
+    <string name="notification_start">Mulai ke tujuan</string>
+    <string name="notification_accept">Mulai</string>
+    <string name="notification_finish">Order selesai</string>
+    <string name="waiting_desc">Tinggi</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="pilih_driver">Pilih Driver</string>
+    <string name="pilih_pekerjaan">Pilih Pekerjaan</string>
+    <string name="alamat">Alamat</string>
+    <string name="code_id">+62</string>
+    <string name="data_diri">Data Diri</string>
+    <string name="daftar">Daftar</string>
+    <string name="bantuan_teknis">Ini adalah menu pesan direct whatsapp ke admin, laporkan jika terjadi kendala teknis atau informasi lainya</string>
+    <string name="input_no">Pada saat login dan register, jangan gunakan awal 0 lagi pada saat input nomor hp</string>
+
+    <string-array name="list_maximum">
+
+        <item>100000</item>
+        <item>150000</item>
+        <item>200000</item>
+        <item>250000</item>
+        <item>Unlimited</item>
+    </string-array>
+
+    <string-array name="gendertype">
+        <item>Jenis Kelamin</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+
+    <string-array name="jobtype">
+        <item>Pilih Pekerjaan</item>
+        <item>Motor</item>
+        <item>Mobil</item>
+    </string-array>
+
+</resources>
