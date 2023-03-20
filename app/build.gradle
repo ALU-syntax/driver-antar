@@ -4,22 +4,22 @@ apply plugin: 'realm-android'
 android {
     signingConfigs {
         config {
-            storeFile file('/Volumes/Untitled/Programming/Projects.co.id/ojek bumdes android/drivers/keystorebumdesku.jks')
-            storePassword 'bumdesku'
-            keyAlias 'bumdesku'
-            keyPassword 'bumdesku'
+            storeFile file('/Volumes/Untitled/Programming/Projects.co.id/antar.shop/driver-antar/keystoreantar.jks')
+            storePassword '123456'
+            keyAlias 'Antar'
+            keyPassword '123456'
         }
         debug {
-            storeFile file('/Volumes/Untitled/Programming/Projects.co.id/ojek bumdes android/drivers/keystorebumdesku.jks')
-            storePassword 'bumdesku'
-            keyAlias 'bumdesku'
-            keyPassword 'bumdesku'
+            storeFile file('/Volumes/Untitled/Programming/Projects.co.id/antar.shop/driver-antar/keystoreantar.jks')
+            storePassword '123456'
+            keyAlias 'Antar'
+            keyPassword '123456'
         }
     }
     compileSdkVersion 30
     buildToolsVersion '30.0.2'
     defaultConfig {
-        applicationId "com.insoftbumdesku.driver"
+        applicationId "com.antar.driver"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 3
@@ -104,7 +104,7 @@ dependencies {
     implementation 'com.duitku:duitku-android-sdk:1.0.3'
     testImplementation 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
-
+    implementation 'com.google.android.gms:play-services-basement:17.5.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

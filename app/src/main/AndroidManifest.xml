@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.insoftbumdesku.driver"
+    package="com.antar.driver"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -22,7 +22,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
-        android:name="com.insoftbumdesku.driver.constants.BaseApp"
+        android:name="com.antar.driver.constants.BaseApp"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
@@ -31,25 +31,25 @@
         android:theme="@style/AppTheme"
         tools:replace="android:supportsRtl"
         tools:targetApi="n">
-        <activity android:name="com.insoftbumdesku.driver.activity.SuksesActivity"></activity>
-        <activity android:name="com.insoftbumdesku.driver.activity.StnkActivity" />
-        <activity android:name="com.insoftbumdesku.driver.activity.PilihWilayahActivity" />
-        <activity android:name="com.insoftbumdesku.driver.activity.WilayahActivity" />
-        <activity android:name="com.insoftbumdesku.driver.activity.DetailActivity" />
-        <activity android:name="com.insoftbumdesku.driver.activity.InboxActivity" />
+        <activity android:name="com.antar.driver.activity.SuksesActivity"></activity>
+        <activity android:name="com.antar.driver.activity.StnkActivity" />
+        <activity android:name="com.antar.driver.activity.PilihWilayahActivity" />
+        <activity android:name="com.antar.driver.activity.WilayahActivity" />
+        <activity android:name="com.antar.driver.activity.DetailActivity" />
+        <activity android:name="com.antar.driver.activity.InboxActivity" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.NewOrderActivity"
+            android:name="com.antar.driver.activity.NewOrderActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
 
-        <receiver android:name="com.insoftbumdesku.driver.utils.MyLocationService" />
+        <receiver android:name="com.antar.driver.utils.MyLocationService" />
 
         <service
-            android:name="com.insoftbumdesku.driver.utils.api.service.NewOrderService"
+            android:name="com.antar.driver.utils.api.service.NewOrderService"
             android:exported="false" />
         <service
-            android:name="com.insoftbumdesku.driver.utils.api.service.MessagingService"
+            android:name="com.antar.driver.utils.api.service.MessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -57,21 +57,21 @@
         </service>
 
         <activity
-            android:name="com.insoftbumdesku.driver.activity.WalletActivity"
+            android:name="com.antar.driver.activity.WalletActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.ChatActivity"
+            android:name="com.antar.driver.activity.ChatActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.WaActivity"
+            android:name="com.antar.driver.activity.WaActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.WithdrawActivity"
+            android:name="com.antar.driver.activity.WithdrawActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.SplashActivity"
+            android:name="com.antar.driver.activity.SplashActivity"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
@@ -82,48 +82,48 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.insoftbumdesku.driver.activity.IntroActivity"
+            android:name="com.antar.driver.activity.IntroActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.TopupSaldoActivity"
+            android:name="com.antar.driver.activity.TopupSaldoActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.PrivacyActivity"
+            android:name="com.antar.driver.activity.PrivacyActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noActionBar" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.RegisterActivity"
+            android:name="com.antar.driver.activity.RegisterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noActionBar" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.OrderDetailActivity"
+            android:name="com.antar.driver.activity.OrderDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noActionBar" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.EditKendaraanActivity"
+            android:name="com.antar.driver.activity.EditKendaraanActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.ChangepassActivity"
+            android:name="com.antar.driver.activity.ChangepassActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.EditProfileActivity"
+            android:name="com.antar.driver.activity.EditProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noActionBar" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.LoginActivity"
+            android:name="com.antar.driver.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.LupapassActivity"
+            android:name="com.antar.driver.activity.LupapassActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.insoftbumdesku.driver.activity.MainActivity"
+            android:name="com.antar.driver.activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/drivers.iml" filepath="$PROJECT_DIR$/.idea/modules/drivers.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/drivers.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/drivers.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/drivers.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/drivers.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/drivers.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/drivers.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/drivers.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/drivers.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/driver-antar.iml" filepath="$PROJECT_DIR$/.idea/modules/driver-antar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/driver-antar.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/driver-antar.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/driver-antar.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/driver-antar.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/driver-antar.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/driver-antar.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/driver-antar.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/driver-antar.app.unitTest.iml" />
     </modules>
   </component>
 </project>
