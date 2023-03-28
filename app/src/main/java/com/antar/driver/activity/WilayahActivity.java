@@ -2,6 +2,7 @@ package com.antar.driver.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,10 +10,17 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.antar.driver.R;
+import com.antar.driver.utils.LocaleHelper;
 
 public class WilayahActivity extends AppCompatActivity {
     private EditText etwilayah;
     private Button btnupdate;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

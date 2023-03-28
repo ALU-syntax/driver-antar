@@ -2,6 +2,7 @@ package com.antar.driver.activity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -32,6 +33,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.AbsListView;
 import android.widget.EditText;
 
+import com.antar.driver.utils.LocaleHelper;
 import com.downloader.Error;
 import com.downloader.OnCancelListener;
 import com.downloader.OnDownloadListener;
@@ -144,6 +146,11 @@ public class ChatActivity extends AppCompatActivity {
     EditText message;
     File direct;
     DownloadRequest prDownloader;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @SuppressLint("ClickableViewAccessibility")
     @Override

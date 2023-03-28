@@ -3,6 +3,7 @@ package com.antar.driver.activity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -35,6 +36,7 @@ import com.antar.driver.constants.Constants;
 import com.antar.driver.json.LoginResponseJson;
 import com.antar.driver.json.EditprofileRequestJson;
 import com.antar.driver.models.User;
+import com.antar.driver.utils.LocaleHelper;
 import com.antar.driver.utils.api.ServiceGenerator;
 import com.antar.driver.utils.api.service.DriverService;
 import com.antar.driver.utils.PicassoTrustAll;
@@ -73,6 +75,11 @@ public class EditProfileActivity extends AppCompatActivity {
     String dateview, disableback, onsubmit;
 
     String country_iso_code = "en";
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

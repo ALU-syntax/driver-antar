@@ -3,11 +3,13 @@ package com.antar.driver.activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.antar.driver.utils.LocaleHelper;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.antar.driver.R;
 import com.antar.driver.constants.BaseApp;
@@ -32,6 +34,11 @@ public class WalletActivity extends AppCompatActivity {
     RecyclerView recycle;
     WalletItem walletItem;
     RelativeLayout rlnodata;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

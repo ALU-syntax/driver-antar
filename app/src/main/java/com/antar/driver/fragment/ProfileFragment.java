@@ -69,6 +69,7 @@ public class ProfileFragment extends Fragment {
     private RelativeLayout rlprogress;
     private SettingPreference sp;
 
+    public static final String TAG = "bottom_sheet";
 
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -88,6 +89,7 @@ public class ProfileFragment extends Fragment {
         LinearLayout logout = getView.findViewById(R.id.lllogout);
         LinearLayout llpassword = getView.findViewById(R.id.llpassword);
         LinearLayout llkendaraan = getView.findViewById(R.id.llkendaraan);
+        LinearLayout llChangeLanguage = getView.findViewById(R.id.llchangelanguage);
         rlprogress = getView.findViewById(R.id.rlprogress);
         TextView rate = getView.findViewById(R.id.rate);
         sp = new SettingPreference(context);
@@ -161,6 +163,14 @@ public class ProfileFragment extends Fragment {
                     startActivity(new Intent(Intent.ACTION_VIEW,
                             Uri.parse("http://play.google.com/store/apps/details?id=" + getActivity().getPackageName())));
                 }
+            }
+        });
+
+        llChangeLanguage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BottomSheetFragment bottomSheetFragment = new BottomSheetFragment();
+                bottomSheetFragment.show(requireActivity().getSupportFragmentManager(), TAG);
             }
         });
 

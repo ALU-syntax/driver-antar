@@ -69,7 +69,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
-                        android:text="Saldo"
+                        android:text="@string/home_saldo"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
 
@@ -101,7 +101,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
-                        android:text="Poin"
+                        android:text="@string/home_poin"
                         android:textColor="@color/white"
                         android:textSize="14dp" />
 
@@ -147,7 +147,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:text="Topup"
+                            android:text="@string/home_topup"
                             android:textColor="@color/white"
                             android:textSize="12dp" />
                     </RelativeLayout>
@@ -172,7 +172,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:text="Tarik Dana"
+                            android:text="@string/home_withdraw"
                             android:textColor="@color/white"
                             android:textSize="12dp" />
                     </RelativeLayout>
@@ -197,7 +197,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:text="Bantuan"
+                            android:text="@string/home_help"
                             android:textColor="@color/white"
                             android:textSize="12dp" />
                     </RelativeLayout>
@@ -222,7 +222,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:text="Detail"
+                            android:text="@string/home_detail"
                             android:textColor="@color/white"
                             android:textSize="12dp" />
                     </RelativeLayout>
@@ -246,7 +246,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:text="Inbox"
+                            android:text="@string/home_inbox"
                             android:textColor="@color/white"
                             android:textSize="10dp" />
                     </RelativeLayout>
@@ -365,7 +365,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:elevation="10dp"
-                android:src="@drawable/logo" />
+                android:src="@drawable/antar" />
         </LinearLayout>
     </RelativeLayout>
 

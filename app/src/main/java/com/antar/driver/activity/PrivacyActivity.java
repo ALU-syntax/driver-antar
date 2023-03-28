@@ -1,5 +1,6 @@
 package com.antar.driver.activity;
 
+import android.content.Context;
 import android.graphics.Color;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,7 @@ import com.antar.driver.R;
 import com.antar.driver.json.PrivacyRequestJson;
 import com.antar.driver.json.PrivacyResponseJson;
 import com.antar.driver.models.SettingsModel;
+import com.antar.driver.utils.LocaleHelper;
 import com.antar.driver.utils.NetworkUtils;
 import com.antar.driver.utils.api.ServiceGenerator;
 import com.antar.driver.utils.api.service.DriverService;
@@ -30,6 +32,10 @@ public class PrivacyActivity extends AppCompatActivity {
     WebView webView;
     ImageView backbtn;
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -27,12 +27,12 @@
                 android:layout_height="180dp"
                 android:layout_gravity="center"
                 android:layout_margin="15dp"
-                android:src="@drawable/mojekdriver" />
+                android:src="@drawable/antar" />
 
             <customfonts.TextViewSFProDisplayRegular
                 android:textSize="18sp"
                 android:gravity="center"
-                android:text="DRIVER BUMdesKu"
+                android:text="DRIVER Antar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 

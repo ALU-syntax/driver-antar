@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Driver BUMdesKu</string>
+    <string name="app_name">Driver Antar</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCiWtYdtXeZALg4FM9bP2dysxDaptNpGr8</string>
     <string name="loginplaystore">821651748354835</string>
     <string name="introtext1">Daftar!</string>
-    <string name="introdesc1">Dapatkan penghasilan tambahan menjadi driver BUMDesKU</string>
+    <string name="introdesc1">Dapatkan penghasilan tambahan menjadi driver Antar</string>
     <string name="introtext2">Tanpa terikat waktu</string>
     <string name="introdesc2">Kamu bebas memilih pekerjaan</string>
     <string name="introtext3">Dengan fitur maps</string>
@@ -71,6 +71,27 @@
     <string name="daftar">Daftar</string>
     <string name="bantuan_teknis">Ini adalah menu pesan direct whatsapp ke admin, laporkan jika terjadi kendala teknis atau informasi lainya</string>
     <string name="input_no">Pada saat login dan register, jangan gunakan awal 0 lagi pada saat input nomor hp</string>
+    <string name="profile_change_language">Ubah Bahasa</string>
+    <string name="choose_language">Pilih Bahasa</string>
+    <string name="intro_start">Mulai</string>
+    <string name="login_note">Pada saat memasukan nomor hp login atau register, jangan gunakan awalan angka 0 lagi karna sudah ada kode 62 otomatis</string>
+    <string name="send_to">Dikirim ke</string>
+    <string name="home_saldo">Saldo</string>
+    <string name="home_poin">Poin</string>
+    <string name="home_topup">Topup</string>
+    <string name="home_withdraw">Tarik Dana</string>
+    <string name="home_help">Bantuan</string>
+    <string name="home_detail">Detail</string>
+    <string name="home_inbox">Inbox</string>
+    <string name="recycle_nodata">No Data</string>
+    <string name="profile_ubah_profil">Ubah Profil</string>
+    <string name="profile_change_password">Ubah Password</string>
+    <string name="profile_change_vehicle_data">Ubah Data Kendaraan</string>
+    <string name="profile_about_us">Tentang Kami</string>
+    <string name="profile_policy">Kebijakan</string>
+    <string name="profile_share">Bagikan</string>
+    <string name="profile_rating">Rating</string>
+    <string name="profile_logout">Keluar</string>
 
     <string-array name="list_maximum">
 

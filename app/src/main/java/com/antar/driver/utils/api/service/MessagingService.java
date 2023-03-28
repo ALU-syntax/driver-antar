@@ -123,7 +123,7 @@ public class MessagingService extends FirebaseMessagingService {
         bigTextStyle.bigText(remoteMessage.getData().get("message"));
 
         mBuilder.setContentIntent(pIntent1);
-        mBuilder.setSmallIcon(R.drawable.logo);
+        mBuilder.setSmallIcon(R.drawable.antar);
         mBuilder.setContentTitle(remoteMessage.getData().get("title"));
         mBuilder.setContentText(remoteMessage.getData().get("message"));
         mBuilder.setStyle(bigTextStyle);

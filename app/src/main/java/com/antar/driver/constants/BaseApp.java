@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
+import com.antar.driver.utils.LocaleHelper;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
@@ -77,7 +78,7 @@ public class BaseApp extends Application {
 
     @Override
     protected void attachBaseContext(Context base) {
-        super.attachBaseContext(base);
+        super.attachBaseContext(LocaleHelper.onAttach(base, "en"));
         MultiDex.install(this);
     }
 

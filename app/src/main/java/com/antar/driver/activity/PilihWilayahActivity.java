@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ import com.antar.driver.json.DaftarWilayahResponseJson;
 import com.antar.driver.json.UpdateWilayahRequestJson;
 import com.antar.driver.json.UpdateWilayahResponseJson;
 import com.antar.driver.models.User;
+import com.antar.driver.utils.LocaleHelper;
 import com.antar.driver.utils.api.ServiceGenerator;
 import com.antar.driver.utils.api.service.DriverService;
 
@@ -27,6 +29,10 @@ import retrofit2.Response;
 public class PilihWilayahActivity extends AppCompatActivity implements wilayahinterface {
     private RecyclerView rvwilayah;
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

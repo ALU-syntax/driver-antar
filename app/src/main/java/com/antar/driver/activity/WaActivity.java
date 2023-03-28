@@ -1,5 +1,6 @@
 package com.antar.driver.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.antar.driver.R;
+import com.antar.driver.utils.LocaleHelper;
 import com.antar.driver.utils.SettingPreference;
 
 public class WaActivity extends AppCompatActivity {
@@ -24,6 +26,11 @@ public class WaActivity extends AppCompatActivity {
     ImageView backbtn, images;
     RelativeLayout rlnotif, rlprogress;
     String disableback;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

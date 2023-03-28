@@ -1,5 +1,6 @@
 package com.antar.driver.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -26,6 +27,7 @@ import com.antar.driver.json.WithdrawResponseJson;
 import com.antar.driver.json.fcm.FCMMessage;
 import com.antar.driver.models.Notif;
 import com.antar.driver.models.User;
+import com.antar.driver.utils.LocaleHelper;
 import com.antar.driver.utils.SettingPreference;
 import com.antar.driver.utils.Utility;
 import com.antar.driver.utils.api.FCMHelper;
@@ -54,6 +56,11 @@ public class WithdrawActivity extends AppCompatActivity {
     LinearLayout llpentunjuk;
     BankItem bankItem;
     private String keyss;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

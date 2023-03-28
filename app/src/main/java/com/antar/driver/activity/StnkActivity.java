@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -32,6 +33,7 @@ import com.antar.driver.constants.Constants;
 import com.antar.driver.json.UpdateRegionRequestJson;
 import com.antar.driver.json.UpdateRegionResponseJson;
 import com.antar.driver.models.User;
+import com.antar.driver.utils.LocaleHelper;
 import com.antar.driver.utils.api.ServiceGenerator;
 import com.antar.driver.utils.api.service.DriverService;
 
@@ -56,6 +58,11 @@ public class StnkActivity extends AppCompatActivity {
     byte[] imageByteArraystnk, imageByteArraykendaraan;
     Bitmap decodedstnk, decodedkendaraan;
     private RelativeLayout rlnotif, rlprogress;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

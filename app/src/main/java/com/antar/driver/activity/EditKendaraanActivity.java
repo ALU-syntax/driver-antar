@@ -1,5 +1,6 @@
 package com.antar.driver.activity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import com.antar.driver.R;
 import com.antar.driver.constants.BaseApp;
 import com.antar.driver.json.LoginResponseJson;
+import com.antar.driver.utils.LocaleHelper;
 import com.antar.driver.utils.api.ServiceGenerator;
 import com.antar.driver.utils.api.service.DriverService;
 import com.antar.driver.json.EditKendaraanRequestJson;
@@ -38,6 +40,10 @@ public class EditKendaraanActivity extends AppCompatActivity {
     RelativeLayout rlnotif, rlprogress;
     String disableback;
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

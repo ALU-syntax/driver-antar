@@ -295,7 +295,7 @@ public class NewOrderActivity extends AppCompatActivity {
 
         PicassoTrustAll.getInstance(this)
                 .load(Constants.IMAGESFITUR + iconfitur)
-                .placeholder(R.drawable.logo)
+                .placeholder(R.drawable.antar)
                 .resize(100, 100)
                 .into(icon);
         cancel.setOnClickListener(new View.OnClickListener() {

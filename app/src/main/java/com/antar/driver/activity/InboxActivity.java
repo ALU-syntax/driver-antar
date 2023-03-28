@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,6 +17,7 @@ import com.antar.driver.item.InboxItem;
 import com.antar.driver.json.NotifRequestJson;
 import com.antar.driver.json.NotifResponseJson;
 import com.antar.driver.models.User;
+import com.antar.driver.utils.LocaleHelper;
 import com.antar.driver.utils.api.ServiceGenerator;
 import com.antar.driver.utils.api.service.DriverService;
 
@@ -47,6 +49,11 @@ public class InboxActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
     }
 
     private void getdata() {

@@ -2,6 +2,7 @@ package com.antar.driver.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
@@ -9,12 +10,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.antar.driver.R;
+import com.antar.driver.utils.LocaleHelper;
 
 public class DetailActivity extends AppCompatActivity {
 
     private TextView judulnotif, tanggalnotif, kembali;
     private ImageView backbtn;
     private WebView isinotif;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

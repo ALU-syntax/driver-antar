@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Driver Antar</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCiWtYdtXeZALg4FM9bP2dysxDaptNpGr8</string>
+    <string name="loginplaystore">821651748354835</string>
+    <string name="introtext1">បញ្ជី!</string>
+    <string name="introdesc1">ទទួលបានប្រាក់ចំណូលបន្ថែមជាអ្នកបើកបរ Antar</string>
+    <string name="introtext2">គ្មានពេលវេលាកំណត់</string>
+    <string name="introdesc2">អ្នកមានសេរីភាពក្នុងការជ្រើសរើសការងារ</string>
+    <string name="introtext3">ជាមួយនឹងមុខងារផែនទី</string>
+    <string name="introdesc3">អ្នកអាចចែកចាយការបញ្ជាទិញតាមផែនទី!</string>
+
+    <string name="bagikan">Antar គឺជាការដឹកជញ្ជូនតាមអ៊ីនធឺណិតក្នុងស្រុក</string>
+    <string name="exit">តើអ្នកប្រាកដថាចង់ចាកចេញពីកម្មវិធី??</string>
+    <string name="yes">បាទ!</string>
+    <string name="no">ទេ</string>
+
+    <string name="email">អ៊ីមែល</string>
+    <string name="verifydesc">ការផ្ទៀងផ្ទាត់លេខទូរសព្ទ</string>
+    <string name="norecieve">មិនបានទទួលលេខកូដទេ។?</string>
+    <string name="resend">បញ្ជូនបន្ត</string>
+    <string name="confirm">ការបញ្ជាក់</string>
+    <string name="privacy">តាមរយៈការចូល អ្នកយល់ព្រម  <![CDATA[<b><font color=#6DC0FF>លក្ខខណ្ឌ</font></b>]]></string>
+
+    <string name="lupa">ភ្លេចពាក្យសម្ងាត់?</string>
+    <string name="button_signIn">ចូល</string>
+    <string name="button_signUp">បញ្ជី</string>
+    <string name="button_dontHaveAccount">មិន​ទាន់​មាន​គណនី? </string>
+    <string name="wrongnumber">លេខទូរស័ព្ទខុស</string>
+    <string name="phoneemailwrong">លេខទូរស័ព្ទ ឬពាក្យសម្ងាត់មិនត្រឹមត្រូវ</string>
+    <string name="phonepass">លេខទូរសព្ទ និងពាក្យសម្ងាត់មិនអាចទទេបានទេ។!</string>
+    <string name="phoneempty">លេខទូរស័ព្ទមិនអាចទទេបានទេ។!</string>
+    <string name="passempty">ពាក្យសម្ងាត់មិនអាចទទេបានទេ។!</string>
+    <string name="emailempty">អ៊ីមែលមិនអាចទទេបានទេ។!</string>
+
+    <string name="hint_name">ឈ្មោះ</string>
+    <string name="hint_email">អ៊ីមែល</string>
+    <string name="hint_phone">ឧទាហរណ៍: 853xxxxxxxx</string>
+    <string name="hint_birthday">ថ្ងៃខែ​ឆ្នាំ​កំណើត</string>
+    <string name="hint_password">ពាក្យសម្ងាត់</string>
+
+    <string name="menu_home">ទំព័រដើម</string>
+    <string name="menu_chat">ជជែក</string>
+    <string name="menu_order">បញ្ជាទិញ</string>
+    <string name="menu_favourite">សំណព្វ</string>
+    <string name="menu_profile">ប្រវត្តិរូប</string>
+    <string name="text_cancel">បានលុបចោល</string>
+    <string name="getstarted">ចាប់ផ្តើម</string>
+
+    <string name="ride_location">ទីតាំង</string>
+    <string name="ride_destination">កម្មវត្ថុ</string>
+
+    <string name="ride_note">កំណត់ចំណាំ</string>
+
+    <string name="ride_setPickUp">រើស​ឡើង</string>
+    <string name="ride_setDestination">គោលបំណង</string>
+    <string name="text_order">បញ្ជាទិញ</string>
+    <string name="waiting_pleaseWait">សូមរង់ចាំ....</string>
+    <string name="text_noInternet">គ្មានការចូលប្រើអ៊ីនធឺណិត</string>
+
+    <string name="notification_cancel">ការបញ្ជាទិញត្រូវបានលុបចោលដោយជោគជ័យ</string>
+    <string name="notification_start">ចាប់ផ្តើមទៅគោលដៅ</string>
+    <string name="notification_accept">ចាប់ផ្តើម</string>
+    <string name="notification_finish">ការបញ្ជាទិញបានបញ្ចប់</string>
+    <string name="waiting_desc">កម្ពស់</string>
+    <string name="jenis_kelamin">ភេទ</string>
+    <string name="pilih_driver">ជ្រើសរើសអ្នកបើកបរ</string>
+    <string name="pilih_pekerjaan">ជ្រើសរើសការងារ</string>
+    <string name="alamat">អាស័យដ្ឋាន</string>
+    <string name="code_id">+62</string>
+    <string name="data_diri">ទិន្នន័យ​ផ្ទាល់ខ្លួន</string>
+    <string name="daftar">បញ្ជី</string>
+    <string name="bantuan_teknis">នេះគឺជាម៉ឺនុយសារ whatsapp ដោយផ្ទាល់ទៅកាន់អ្នកគ្រប់គ្រង សូមរាយការណ៍ប្រសិនបើមានបញ្ហាបច្ចេកទេស ឬព័ត៌មានផ្សេងទៀត។</string>
+    <string name="input_no">នៅពេលចូល និងចុះឈ្មោះ កុំប្រើលេខ 0 ដំបូងម្តងទៀតនៅពេលបញ្ចូលលេខទូរស័ព្ទ</string>
+    <string name="profile_change_language">ប្ដូរ​ភាសា</string>
+    <string name="choose_language">ជ្រើសរើសភាសា</string>
+    <string name="intro_start">ចាប់ផ្តើម</string>
+    <string name="login_note">ពពេល​បញ្ចូល​លេខ​ទូរសព្ទ​ចូល ឬ​ចុះ​ឈ្មោះ កុំ​ប្រើ​បុព្វបទ​លេខ 0 ទៀត​ទេ ព្រោះ​មាន​លេខ​កូដ​ប្រទេស​ស្វ័យ​ប្រវត្តិ​រួច​ហើយ</string>
+    <string name="send_to">បានផ្ញើទៅ </string>
+    <string name="home_saldo">តុល្យភាព</string>
+    <string name="home_poin">ពិន្ទុ</string>
+    <string name="home_topup">បញ្ចូល​លុយ</string>
+    <string name="home_withdraw">ដក​មូលនិធិ</string>
+    <string name="home_help">ជួយ</string>
+    <string name="home_detail">ព័ត៌មានលម្អិត</string>
+    <string name="home_inbox">ប្រអប់សំបុត្រ</string>
+    <string name="recycle_nodata">ទិន្នន័យទទេ</string>
+    <string name="profile_ubah_profil">ផ្លាស់ប្តូរទម្រង់</string>
+    <string name="profile_change_password">ផ្លាស់ប្តូរពាក្យសម្ងាត់</string>
+    <string name="profile_change_vehicle_data">ផ្លាស់ប្តូរទិន្នន័យយានយន្ត</string>
+    <string name="profile_about_us">អំពី​ពួក​យើង</string>
+    <string name="profile_policy">គោលនយោបាយ</string>
+    <string name="profile_share">ចែករំលែក</string>
+    <string name="profile_rating">ការវាយតម្លៃ</string>
+    <string name="profile_logout">ទៅ​ក្រៅ</string>
+
+    <string-array name="list_maximum">
+
+        <item>100000</item>
+        <item>150000</item>
+        <item>200000</item>
+        <item>250000</item>
+        <item>គ្មានដែនកំណត់</item>
+    </string-array>
+
+    <string-array name="gendertype">
+        <item>ភេទ</item>
+        <item>បុរស</item>
+        <item>ស្ត្រី</item>
+    </string-array>
+
+    <string-array name="jobtype">
+        <item>ជ្រើសរើសការងារ</item>
+        <item>ម៉ូតូ</item>
+        <item>ឡាន</item>
+    </string-array>
+
+</resources>

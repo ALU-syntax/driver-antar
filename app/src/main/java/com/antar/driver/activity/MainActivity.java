@@ -28,6 +28,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.antar.driver.utils.LocaleHelper;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
@@ -89,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout rlprogress;
     FusedLocationProviderClient fusedLocationProviderClient;
     boolean canceled;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     public static MainActivity getInstance() {
         return mainActivity;

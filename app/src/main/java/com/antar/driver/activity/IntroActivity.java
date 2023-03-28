@@ -20,6 +20,7 @@ import android.widget.LinearLayout;
 
 import com.antar.driver.R;
 import com.antar.driver.utils.AppIntroPagerAdapter;
+import com.antar.driver.utils.LocaleHelper;
 import com.antar.driver.utils.ProjectUtils;
 import com.antar.driver.utils.SharedPrefrence;
 
@@ -37,6 +38,10 @@ public class IntroActivity extends AppCompatActivity implements ViewPager.OnPage
     Button buttonSign;
     int[] mResources = {R.drawable.slide_one, R.drawable.slide_two, R.drawable.slide_three};
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
