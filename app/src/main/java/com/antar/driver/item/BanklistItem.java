@@ -51,7 +51,8 @@ public class BanklistItem extends RecyclerView.Adapter<BanklistItem.ItemRowHolde
         if (singleItem.getText().equals("Unlimited")) {
             holder.text.setText(singleItem.getText());
         } else {
-            Utility.currencyTXT(holder.text, singleItem.getText(), mContext);
+//            Utility.currencyTXT(holder.text, singleItem.getText(), mContext);
+            Utility.convertLocaleCurrencyTV(holder.text, mContext, singleItem.getText());
         }
         holder.text.setTypeface(Typeface.createFromAsset(mContext.getAssets(),
                 "fonts/NeoSansPro_Medium.ttf"));

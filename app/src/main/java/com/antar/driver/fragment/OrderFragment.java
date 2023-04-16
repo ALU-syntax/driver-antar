@@ -686,13 +686,16 @@ public class OrderFragment extends Fragment implements OnMapReadyCallback, Googl
                         llorderdetail.setVisibility(View.VISIBLE);
                         llmerchantdetail.setVisibility(View.VISIBLE);
                         llmerchantinfo.setVisibility(View.VISIBLE);
-                        Utility.currencyTXT(deliveryfee, String.valueOf(transaksi.getHarga()), context);
-                        Utility.currencyTXT(cost, String.valueOf(transaksi.getTotal_biaya()), context);
+//                        Utility.currencyTXT(deliveryfee, String.valueOf(transaksi.getHarga()), context);
+//                        Utility.currencyTXT(cost, String.valueOf(transaksi.getTotal_biaya()), context);
+                        Utility.convertLocaleCurrencyTV(deliveryfee, context, String.valueOf(transaksi.getHarga()));
+                        Utility.convertLocaleCurrencyTV(cost, context, String.valueOf(transaksi.getTotal_biaya()));
                         if(fitur.equals("3")) {
                             llbayarresto.setVisibility(View.VISIBLE);
                             Double bpesanan = Double.parseDouble(transaksi.getTotal_biaya());
                             Double rpesanan = bpesanan / 1.1 ;
-                            Utility.currencyTXT(sisa, String.valueOf(rpesanan), context);
+//                            Utility.currencyTXT(sisa, String.valueOf(rpesanan), context);
+                            Utility.convertLocaleCurrencyTV(sisa, context, String.valueOf(rpesanan));
                         } else {
                             llbayarresto.setVisibility(GONE);
                         }
@@ -1273,10 +1276,12 @@ public class OrderFragment extends Fragment implements OnMapReadyCallback, Googl
         destinationText5.setText(request.getAlamatTujuan5());
         if (type.equals("4")) {
             double totalbiaya = Double.parseDouble(request.getTotal_biaya());
-            Utility.currencyTXT(priceText, String.valueOf(request.getHarga() + totalbiaya), context);
+//            Utility.currencyTXT(priceText, String.valueOf(request.getHarga() + totalbiaya), context);
+            Utility.convertLocaleCurrencyTV(priceText, context, String.valueOf(request.getHarga()));
         } else {
             double totalbiaya = Double.parseDouble(request.getKreditPromo());
-            Utility.currencyTXT(priceText, String.valueOf(request.getHarga() - totalbiaya), context);
+//            Utility.currencyTXT(priceText, String.valueOf(request.getHarga() - totalbiaya), context);
+            Utility.convertLocaleCurrencyTV(priceText, context, String.valueOf(request.getHarga() - totalbiaya));
         }
 
         phone.setOnClickListener(new View.OnClickListener() {

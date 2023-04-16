@@ -209,11 +209,13 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
 
 
         if (sp.getSetting()[1].isEmpty()) {
-            Utility.currencyTXT(uangbelanja, "100000", context);
+//            Utility.currencyTXT(uangbelanja, "100000", context);
+            Utility.convertLocaleCurrencyTV(uangbelanja, context, "100000");
         } else if (sp.getSetting()[1].equals("Unlimited")) {
             uangbelanja.setText(sp.getSetting()[1]);
         } else {
-            Utility.currencyTXT(uangbelanja, sp.getSetting()[1], context);
+//            Utility.currencyTXT(uangbelanja, sp.getSetting()[1], context);
+            Utility.convertLocaleCurrencyTV(uangbelanja, context, sp.getSetting()[1]);
         }
 
         List<BankModels> items = getPeopleData(context);
@@ -357,7 +359,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
 //                Toast.makeText(context, "Untuk Sementara fitur ini dinonaktifkan...!", Toast.LENGTH_SHORT).show();
             }
         });
-        Utility.currencyTXT(saldo, saldodriver, context);
+//        Utility.currencyTXT(saldo, saldodriver, context);
+        Utility.convertLocaleCurrencyTV(saldo, context, saldodriver);
     }
 
     private void getpoin() {
@@ -449,7 +452,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
                 if (item.getText().equals("Unlimited")) {
                     uangbelanja.setText(item.getText());
                 } else {
-                    Utility.currencyTXT(uangbelanja, item.getText(), context);
+//                    Utility.currencyTXT(uangbelanja, item.getText(), context);
+                    Utility.convertLocaleCurrencyTV(uangbelanja, context, item.getText());
                 }
                 sp.updateMaksimalBelanja(item.getText());
                 dialog.dismiss();

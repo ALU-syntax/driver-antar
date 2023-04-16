@@ -390,12 +390,15 @@ public class OrderDetailActivity extends AppCompatActivity implements OnMapReady
                             llorderdetail.setVisibility(View.VISIBLE);
                             llmerchantdetail.setVisibility(View.VISIBLE);
                             llmerchantinfo.setVisibility(View.VISIBLE);
-                            Utility.currencyTXT(deliveryfee, String.valueOf(transaksi.getHarga()), OrderDetailActivity.this);
-                            Utility.currencyTXT(cost, String.valueOf(transaksi.getTotal_biaya()), OrderDetailActivity.this);
+//                            Utility.currencyTXT(deliveryfee, String.valueOf(transaksi.getHarga()), OrderDetailActivity.this);
+//                            Utility.currencyTXT(cost, String.valueOf(transaksi.getTotal_biaya()), OrderDetailActivity.this);
+                            Utility.convertLocaleCurrencyTV(deliveryfee, OrderDetailActivity.this, String.valueOf(transaksi.getHarga()));
+                            Utility.convertLocaleCurrencyTV(cost, OrderDetailActivity.this, String.valueOf(transaksi.getTotal_biaya()));
                             if(fitur.equals("3")) {
                                 Double bpesanan = Double.parseDouble(transaksi.getTotal_biaya());
                                 Double rpesanan = bpesanan / 1.1 ;
-                                Utility.currencyTXT(sisa, String.valueOf(rpesanan), OrderDetailActivity.this);
+//                                Utility.currencyTXT(sisa, String.valueOf(rpesanan), OrderDetailActivity.this);
+                                Utility.convertLocaleCurrencyTV(sisa, OrderDetailActivity.this, String.valueOf(rpesanan));
                             }
                             namamerchant.setText(transaksi.getNama_merchant());
                             itemPesananItem = new ItemPesananItem(responsedata.body().getItem(), R.layout.item_pesanan);
@@ -837,10 +840,12 @@ public class OrderDetailActivity extends AppCompatActivity implements OnMapReady
 
         if (request.getHome().equals("4")) {
             double totalbiaya = Double.parseDouble(request.getTotal_biaya());
-            Utility.currencyTXT(priceText, String.valueOf(request.getHarga()+ totalbiaya), this);
+//            Utility.currencyTXT(priceText, String.valueOf(request.getHarga()+ totalbiaya), this);
+            Utility.convertLocaleCurrencyTV(priceText, this, String.valueOf(request.getHarga() + totalbiaya));
         } else {
             double totalbiaya = Double.parseDouble(request.getKreditPromo());
-            Utility.currencyTXT(priceText, String.valueOf(request.getHarga() - totalbiaya), this);
+//            Utility.currencyTXT(priceText, String.valueOf(request.getHarga() - totalbiaya), this);
+            Utility.convertLocaleCurrencyTV(priceText, this, String.valueOf(request.getHarga()));
         }
 
     }

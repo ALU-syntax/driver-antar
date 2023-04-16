@@ -223,8 +223,11 @@ public class NewOrderActivity extends AppCompatActivity {
             time.setText("Merchant");
             distancetextes.setText("Biaya Pengiriman");
             costtextes.setText("Biaya Pesanan");
-            Utility.currencyTXT(distancetext, distance, this);
-            Utility.currencyTXT(costtext, cost, this);
+//            Utility.currencyTXT(distancetext, distance, this);
+//            Utility.currencyTXT(costtext, cost, this);
+            Utility.convertLocaleCurrencyTV(distancetext, this, distance);
+            Utility.convertLocaleCurrencyTV(costtext, this, cost);
+
         } else {
 
             estimatetext.setText(estimasitime);
@@ -285,7 +288,8 @@ public class NewOrderActivity extends AppCompatActivity {
 
 
 
-        Utility.currencyTXT(pricetext, hargatotal, this);
+//        Utility.currencyTXT(pricetext, hargatotal, this);
+        Utility.convertLocaleCurrencyTV(pricetext, this, hargatotal);
         if (wallett.equalsIgnoreCase("true")) {
             totaltext.setText("Total (SALDO)");
         } else {

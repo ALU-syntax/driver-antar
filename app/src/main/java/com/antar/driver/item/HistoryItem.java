@@ -55,9 +55,11 @@ public class HistoryItem extends RecyclerView.Adapter<HistoryItem.ItemRowHolder>
         holder.text.setText("Order " + singleItem.getFitur());
         if (singleItem.getHome().equals("4")) {
             double totalbiaya = Double.parseDouble(singleItem.getTotalbiaya());
-            Utility.currencyTXT(holder.nominal, String.valueOf(singleItem.getHarga()+ totalbiaya), mContext);
+//            Utility.currencyTXT(holder.nominal, String.valueOf(singleItem.getHarga()+ totalbiaya), mContext);
+            Utility.convertLocaleCurrencyTV(holder.nominal, mContext, String.valueOf(singleItem.getHarga() + totalbiaya));
         } else {
-            Utility.currencyTXT(holder.nominal, String.valueOf(singleItem.getHarga()), mContext);
+//            Utility.currencyTXT(holder.nominal, String.valueOf(singleItem.getHarga()), mContext);
+            Utility.convertLocaleCurrencyTV(holder.nominal, mContext, String.valueOf(singleItem.getHarga()));
         }
         holder.keterangan.setText(singleItem.getStatustransaksi());
 
