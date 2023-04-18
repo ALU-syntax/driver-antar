@@ -93,6 +93,34 @@
     <string name="profile_share">Bagikan</string>
     <string name="profile_rating">Rating</string>
     <string name="profile_logout">Ganti Akun</string>
+    <string name="profile_copy_refferal_code">Salin Referal Code</string>
+    <string name="topup_nominal">Nominal:</string>
+    <string name="topup_payment_method">Metode Pembayaran</string>
+    <string name="topup_transfer">Transfer Bank Dan Minimarket</string>
+    <string name="withdraw_amount">Jumlah</string>
+    <string name="withdraw_bank">Bank</string>
+    <string name="withdraw_name">Nama</string>
+    <string name="withdraw_account_number">No rekening</string>
+    <string name="withdraw_send">Kirim</string>
+    <string name="wa_information">Tulis Informasi</string>
+    <string name="wa_send">Kirim</string>
+    <string name="wallet_no_data">No Data</string>
+    <string name="order_location">Lokasi</string>
+    <string name="order_merchant_info">Info Merchant</string>
+    <string name="order_detail">Detail Order</string>
+    <string name="order_estimation">Estimasi Waktu</string>
+    <string name="order_fee">Biaya Pesanan</string>
+    <string name="order_resto_paid">(Bayar Ke Resto)</string>
+    <string name="order_send_fee">Biaya Kirim</string>
+    <string name="order_total">Total</string>
+    <string name="order_total_wallet">Total (Saldo Wallet)</string>
+    <string name="order_total_cash">Total (Tunai)</string>
+    <string name="home_work_region">Wilayah Kerja</string>
+    <string name="change_profile">Ubah Profil</string>
+    <string name="change_profile_send">Kirim</string>
+    <string name="change_password_old">Password Lama</string>
+    <string name="change_password_new">Password Baru</string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
 
     <string-array name="list_maximum">
 

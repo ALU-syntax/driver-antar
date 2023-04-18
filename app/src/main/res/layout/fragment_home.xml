@@ -48,7 +48,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="Wilayah Kerja"
+                        android:text="@string/home_work_region"
                         android:textColor="@color/white"
                         android:textSize="17sp" />
 

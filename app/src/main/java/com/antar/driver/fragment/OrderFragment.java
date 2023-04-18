@@ -19,6 +19,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.antar.driver.utils.LocaleHelper;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -577,6 +578,8 @@ public class OrderFragment extends Fragment implements OnMapReadyCallback, Googl
         });
     }
 
+
+
     private void getData(final String idtrans, final String idpelanggan) {
         final User loginUser = BaseApp.getInstance(context).getLoginUser();
         DriverService service = ServiceGenerator.createService(DriverService.class, loginUser.getEmail(), loginUser.getPassword());
@@ -603,9 +606,9 @@ public class OrderFragment extends Fragment implements OnMapReadyCallback, Googl
                     type = transaksi.getHome();
 
                     if (transaksi.isPakaiWallet()) {
-                        totaltext.setText("Total (Saldo Wallet)");
+                        totaltext.setText(getString(R.string.order_total_wallet));
                     } else {
-                        totaltext.setText("Total (Tunai)");
+                        totaltext.setText(getString(R.string.order_total_cash));
                     }
 
                     if (onsubmit.equals("2")) {

@@ -814,9 +814,9 @@ public class OrderDetailActivity extends AppCompatActivity implements OnMapReady
                 .into(foto);
 
         if (request.isPakaiWallet()) {
-            totaltext.setText("Total (Saldo)");
+            totaltext.setText(getString(R.string.order_total_wallet));
         } else {
-            totaltext.setText("Total (Tunai)");
+            totaltext.setText(getString(R.string.order_total_wallet));
         }
 
         if (!request.getRate().isEmpty()) {

@@ -93,6 +93,34 @@
     <string name="profile_share">Share</string>
     <string name="profile_rating">Rating</string>
     <string name="profile_logout">Logout</string>
+    <string name="profile_copy_refferal_code">Copy Referral Code</string>
+    <string name="topup_nominal">Nominal:</string>
+    <string name="topup_payment_method">Payment Method</string>
+    <string name="topup_transfer">Bank Transfers And Minimarkets</string>
+    <string name="withdraw_amount">Amount</string>
+    <string name="withdraw_bank">Bank</string>
+    <string name="withdraw_name">Name</string>
+    <string name="withdraw_account_number">Account Number</string>
+    <string name="withdraw_send">Send</string>
+    <string name="wa_information">Write Down The Information</string>
+    <string name="wa_send">Send</string>
+    <string name="wallet_no_data">No Data</string>
+    <string name="order_location">Location</string>
+    <string name="order_merchant_info">Merchant Info</string>
+    <string name="order_detail">Order Detail</string>
+    <string name="order_estimation">Time Estimate</string>
+    <string name="order_fee">Order Fee</string>
+    <string name="order_resto_paid">(Pay At The Restaurant)</string>
+    <string name="order_send_fee">shipping cost</string>
+    <string name="order_total">Total</string>
+    <string name="order_total_wallet">Total (Wallet Balance)</string>
+    <string name="order_total_cash">Total (Cash)</string>
+    <string name="home_work_region">Working area</string>
+    <string name="change_profile">Change Profile</string>
+    <string name="change_profile_send">Send</string>
+    <string name="change_password_old">Old Password</string>
+    <string name="change_password_new">New Password</string>
+    <string name="privacy_policy">Privacy Policy</string>
 
     <string-array name="list_maximum">
 

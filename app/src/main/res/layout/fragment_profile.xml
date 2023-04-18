@@ -105,7 +105,7 @@
                                 android:textColor="@color/red"
                                 android:id="@+id/txt_salin_refcode"
                                 android:layout_marginLeft="20dp"
-                                android:text="Salin Referal Code "
+                                android:text="@string/profile_copy_refferal_code"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                         </LinearLayout>
@@ -516,7 +516,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:gravity="center_vertical"
-                    android:text="Versi 1.2.8 Updated at 2022-03-29"
+                    android:text="Version 1.2.8 Updated at 2022-03-29"
                     android:textColor="@color/black"
                     android:textSize="15dp" />
 

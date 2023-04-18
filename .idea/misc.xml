@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_changepassword.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_changepassword.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/activity_detail_order.xml" value="0.21784420289855072" />
+        <entry key="app/src/main/res/layout/activity_editprofile.xml" value="0.21784420289855072" />
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_privacy.xml" value="0.21784420289855072" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/activity_stnk.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_topup.xml" value="0.21784420289855072" />
+        <entry key="app/src/main/res/layout/activity_wa.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_wallet.xml" value="0.21784420289855072" />
+        <entry key="app/src/main/res/layout/activity_withdraw.xml" value="0.24074074074074073" />
         <entry key="app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.2171875" />
         <entry key="app/src/main/res/layout/fragment_enablelocation.xml" value="0.10612968591691996" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22" />

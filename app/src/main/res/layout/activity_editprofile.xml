@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Ubah Profil"
+                android:text="@string/change_profile"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
         </FrameLayout>
@@ -266,7 +266,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/button_round_1"
-                android:text="Kirim"
+                android:text="@string/change_profile_send"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 

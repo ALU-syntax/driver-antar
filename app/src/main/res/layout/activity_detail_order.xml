@@ -100,7 +100,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
-                            android:text="Lokasi"
+                            android:text="@string/order_location"
                             android:textSize="18dp" />
 
                         <LinearLayout
@@ -590,7 +590,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="15dp"
                                     android:layout_marginRight="15dp"
-                                    android:text="Info Merchant"
+                                    android:text="@string/order_merchant_info"
                                     android:textSize="15dp" />
 
                                 <LinearLayout
@@ -673,7 +673,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="15dp"
-                                    android:text="Detail Order"
+                                    android:text="@string/order_detail"
                                     android:textSize="18dp" />
 
                                 <androidx.recyclerview.widget.RecyclerView
@@ -934,7 +934,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="15dp"
-                                android:text="Detail Order"
+                                android:text="@string/order_detail"
                                 android:textSize="18dp" />
 
                             <LinearLayout
@@ -950,7 +950,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="left"
-                                    android:text="Estimasi Waktu"
+                                    android:text="@string/order_estimation"
                                     android:textSize="15dp" />
 
                                 <customfonts.TextViewSFProDisplayRegular
@@ -1061,7 +1061,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
                                         android:gravity="left"
-                                        android:text="Biaya Pesanan"
+                                        android:text="@string/order_fee"
                                         android:textSize="15dp" />
 
                                     <customfonts.TextViewSFProDisplayRegular
@@ -1089,7 +1089,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
                                         android:gravity="left"
-                                        android:text="(Bayar Ke Resto)"
+                                        android:text="@string/order_resto_paid"
                                         android:textSize="15dp" />
 
                                     <customfonts.TextViewSFProDisplayRegular
@@ -1116,7 +1116,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
                                         android:gravity="left"
-                                        android:text="Biaya Kirim"
+                                        android:text="@string/order_send_fee"
                                         android:textSize="15dp" />
 
                                     <customfonts.TextViewSFProDisplayRegular
@@ -1154,7 +1154,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="left"
-                                    android:text="Total"
+                                    android:text="@string/order_total"
                                     android:textSize="18dp" />
 
                                 <customfonts.TextViewSFProDisplayMedium
