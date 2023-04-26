@@ -16,6 +16,7 @@ import com.antar.driver.json.FcmKeyRequestJson;
 import com.antar.driver.json.FcmKeyResponseJson;
 import com.antar.driver.json.GetOnRequestJson;
 import com.antar.driver.json.JobResponseJson;
+import com.antar.driver.json.ListBankActiveResponseJson;
 import com.antar.driver.json.NotifRequestJson;
 import com.antar.driver.json.NotifResponseJson;
 import com.antar.driver.json.PoinRequestJson;
@@ -48,6 +49,7 @@ import com.antar.driver.json.WithdrawResponseJson;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 
@@ -144,6 +146,9 @@ public interface DriverService {
 
     @POST("driver/topupmidtrans")
     Call<ResponseJson> topupmidtrans(@Body WithdrawRequestJson param);
+
+    @GET("pelanggan/getlistbank")
+    Call<ListBankActiveResponseJson> listBankActive();
 
     @POST("driver/verifycode")
     Call<ResponseJson> verifycode(@Body VerifyRequestJson param);
